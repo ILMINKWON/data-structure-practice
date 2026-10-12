@@ -39,3 +39,21 @@ void inorder (Node *node){
     inorder(node -> right);
 }
 
+
+//c언어에서 함수는 항상 뒤에 괄호를 붙어야한다.
+int main(void) {
+    Node *root = NULL;
+
+    root = insert(root, 50);
+    root = insert(root, 30);
+    root = insert(root, 70);
+    root = insert(root, 20);
+    root = insert(root, 40);
+    root = insert(root, 60);
+    root = insert(root, 80);
+
+    inorder(root);
+    printf("\n");
+
+    return 0;
+}
